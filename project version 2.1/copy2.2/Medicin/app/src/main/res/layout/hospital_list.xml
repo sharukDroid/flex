@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/thememediumgray"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+        <ImageView
+            android:id="@+id/hospital_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hospital_card"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textColor="@color/whitesmoke"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/whitesmoke"/>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

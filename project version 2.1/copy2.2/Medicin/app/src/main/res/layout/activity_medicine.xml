@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themedarkgray"
+    tools:context=".Medicine">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/medicine_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/medicine_activity_card"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/thememediumgray"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/medicine_activity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heading"
+                    android:textColor="@color/whitesmoke"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/medicine_activity_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Catagory"
+                    android:textColor="@color/whitesmoke"/>
+
+                <TextView
+                    android:id="@+id/medicine_activity_dosage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dasage"
+                    android:textColor="@color/whitesmoke"/>
+
+                <TextView
+                    android:id="@+id/medicine_activity_strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strength"
+                    android:textColor="@color/whitesmoke"/>
+
+                <TextView
+                    android:id="@+id/medicine_activity_pack_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pack Sixe"
+                    android:textColor="@color/whitesmoke"/>
+
+                <TextView
+                    android:id="@+id/medicine_activity_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company"
+                    android:textColor="@color/PeachPuff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/medicine_activity_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textColor="@color/PeachPuff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
